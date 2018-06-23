@@ -16,7 +16,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ui.activity.MainActivity">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/mainListCharacters"
@@ -36,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/main__empty_view"
-            android:visibility="@{dataList.smpty ? View.VISIBLE : View.GONE}"
+            android:visibility="@{dataList.empty ? View.VISIBLE : View.GONE}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
