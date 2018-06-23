@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="character_photo_size">200dp</dimen>
+    <dimen name="margin__normal">8dp</dimen>
+    <dimen name="margin__big">16dp</dimen>
+</resources>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ExampleDataBinding</string>
+    <string name="main__empty_view">No hay elementos</string>
 </resources>
