@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import github.dangalrio.com.exampledatabinding.databinding.RowCharacterBinding
 import github.dangalrio.com.exampledatabinding.model.WorldOfWarcraftModel
 
-class CharacterAdapter (var items: List<WorldOfWarcraftModel>) :
+class CharacterAdapter (var items: List<WorldOfWarcraftModel>,
+                        var listener: (character: WorldOfWarcraftModel) -> Unit) :
         RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterViewHolder {
@@ -22,6 +23,9 @@ class CharacterAdapter (var items: List<WorldOfWarcraftModel>) :
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val currentCharacter = items[position]
         holder.bind(currentCharacter)
+        holder.itemView.setOnClickListener{
+            listener.invoke(currentCharacter)
+        }
     }
 
     class CharacterViewHolder (private var binding: RowCharacterBinding) :

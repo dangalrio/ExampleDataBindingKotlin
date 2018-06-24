@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorArthas">#64314bdc</color>
+    <color name="colorDescription">#5e5d5d</color>
+    <color name="colorIllidan">#6489dc1c</color>
+    <color name="colorGuldan">#646a3def</color>
+    <color name="colorVarian">#648f3f1f</color>
+    <color name="colorSylcanas">#642c2d2b</color>
+
 </resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="character"
+            type="github.dangalrio.com.exampledatabinding.model.WorldOfWarcraftModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/detail__img__character"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/detail_character_photo_size"
+            android:scaleType="centerCrop"
+            android:contentDescription="@null"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:imageUrl="@{character.imageUrl}"
+            tools:background="@drawable/arthas"/>
+
+        <TextView
+            android:id="@+id/detail__label__name"
+            style="@style/CharacterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{character.name}"
+            app:layout_constraintTop_toBottomOf="@+id/detail__img__character"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="Arthas"/>
+
+        <TextView
+            android:id="@+id/detail__label__description"
+            style="@style/CharacterDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin__normal"
+            android:text="@{character.description}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail__label__name"
+            tools:text="Príncipe heredero de Lordaeron y Caballero de la Mano de Plata, era hijo del Rey Terenas Menethil II y heredero del trono." />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -28,11 +28,17 @@ class ModelUtil {
                     "Titulada a veces también como \"la Dama Oscura\" o como \"la Reina alma en pena\", es la líder suprema de los Renegados, una de las facciones más poderosas de no-muertos en Azeroth.",
                     "https://d1u5p3l4wpay3k.cloudfront.net/es_wowpedia/b/bc/Sylvanas_Raneman.jpg?version=30b698e8eb7d17a8d38369418acddf1b")
 
+            val guldan = WorldOfWarcraftModel(5,
+                    "Gul'dan",
+                    "fue el brujo más poderoso de la Horda y de facto fundador de la Horda orca. Abandonó el chamanismo y traicionó a su pueblo y a su maestro para servir al señor demonio Kil'jaeden quien le dio poder. Gul'dan fue el responsable directo de la caída de los orcos en la esclavitud así como uno de los autores de la invasión a Azeroth.",
+                    "https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/0/08/Gul%27dan_HoW.jpg")
+
 
             characterList.add(arthas)
             characterList.add(illidan)
             characterList.add(varian)
             characterList.add(sylvanas)
+            characterList.add(guldan)
             return characterList
         }
     }

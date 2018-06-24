@@ -4,32 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        
-        <import type="android.view.View"/>
-        <import type="java.util.List"/>
-        <import type="github.dangalrio.com.exampledatabinding.model.WorldOfWarcraftModel"/>
-        
+
+        <import type="android.view.View" />
+
+        <import type="java.util.List" />
+
+        <import type="github.dangalrio.com.exampledatabinding.model.WorldOfWarcraftModel" />
+
         <variable
             name="dataList"
-            type="List&lt;WorldOfWarcraftModel&gt;"/>
+            type="List&lt;WorldOfWarcraftModel&gt;" />
     </data>
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.activity.MainActivity">
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/mainListCharacters"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:visibility="@{dataList.empty ? View.GONE : View.VISIBLE}"
-            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:spanCount="1"
-            tools:listitem="@layout/row_character"/>
 
         <TextView
             android:id="@+id/mainLabelEmptyView"
@@ -39,7 +29,22 @@
             android:visibility="@{dataList.empty ? View.VISIBLE : View.GONE}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainListCharacters"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="@{dataList.empty ? View.GONE : View.VISIBLE}"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:spanCount="1"
+            tools:listitem="@layout/row_character" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

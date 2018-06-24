@@ -19,6 +19,22 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="CharacterName">
+        <item name="android:layout_marginLeft">@dimen/margin__normal</item>
+        <item name="android:layout_marginRight">@dimen/margin__normal</item>
+        <item name="android:layout_marginTop">@dimen/margin__big</item>
+        <item name="android:layout_marginBottom">@dimen/margin__big</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CharacterDescription">
+        <item name="android:layout_margin">@dimen/margin__normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorDescription</item>
+    </style>
+
     <style name="EmptyViewTitle">
         <item name="android:layout_margin">@dimen/margin__normal</item>
         <item name="android:textSize">16sp</item>

@@ -3,4 +3,5 @@
     <dimen name="character_photo_size">240dp</dimen>
     <dimen name="margin__normal">8dp</dimen>
     <dimen name="margin__big">16dp</dimen>
+    <dimen name="detail_character_photo_size">250dp</dimen>
 </resources>
